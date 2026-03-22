@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import xgboost
+import numpy as np
 
 # Page settings
 st.set_page_config(page_title="Salary Prediction App", layout="centered")
