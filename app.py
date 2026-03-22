@@ -13,7 +13,7 @@ st.write("Predict salary based on job details using Machine Learning")
 
 # Load dataset and model
 df = pd.read_csv("job_salary_prediction_dataset.csv")
-model = joblib.load("SalaryPrediction.pkl_XGBRegressor")
+model = joblib.load("model.pkl")
 
 # Sidebar Inputs
 st.sidebar.header("Enter Job Details")
