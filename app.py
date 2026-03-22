@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-import joblib
 import xgboost
+import pickle
 import numpy as np
 
 # Page settings
@@ -13,7 +13,6 @@ st.write("Predict salary based on job details using Machine Learning")
 
 # Load dataset and model
 df = pd.read_csv("job_salary_prediction_dataset.csv")
-import pickle
 model = pickle.load(open("model.pkl", "rb"))
 
 # Sidebar Inputs
