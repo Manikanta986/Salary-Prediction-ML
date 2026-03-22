@@ -13,7 +13,8 @@ st.write("Predict salary based on job details using Machine Learning")
 
 # Load dataset and model
 df = pd.read_csv("job_salary_prediction_dataset.csv")
-model = joblib.load("model.pkl")
+import pickle
+model = pickle.load(open("model.pkl", "rb"))
 
 # Sidebar Inputs
 st.sidebar.header("Enter Job Details")
