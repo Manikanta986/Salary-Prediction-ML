@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import pickle
+import joblib
 
 st.set_page_config(page_title="Salary Prediction App")
 
@@ -10,7 +10,7 @@ st.title("Salary Prediction App")
 df = pd.read_csv("job_salary_prediction_dataset.csv")
 
 # Load model
-model = pickle.load(open("model.pkl", "rb"))
+model = joblib.load("model.pkl")
 
 st.sidebar.header("Enter Details")
 
